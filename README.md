@@ -105,6 +105,9 @@ Tech screening opdracht voor het Team Rockstars IT sollicitatieproces.
    Zorg dat er een soort van koppeling is tussen de nummers en Spotify. In de aangeleverde database data staat een Spotify trackID die je kunt gebruiken. 
    Link naar de Spotify WEB API: https://developer.spotify.com/documentation/web-api Maak een developer account aan met een Spotify free account.
 
+9. **Progressieve web-applicatie (zelf bedacht)**\
+   Maak er een PWA van!
+
 
 ## Rules
 
