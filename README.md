@@ -19,6 +19,15 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+### `yarn start-json-server`
+
+Starts the json-server with song and artist resources fed as db.json file.
+
+### `yarn serve`
+
+Serves the latest build in the `build` folder.\
+Used for running cypress tests against.
+
 ### `yarn jest-test`
 
 Launches the jest test runner in the interactive watch mode.
@@ -32,15 +41,6 @@ Make sure to serve the application using the `serve` command and start the json-
 
 Open the cypress e2e testing environment. 
 Make sure to serve the application using the serve command and start the json-server using the start-json-server command!
-
-### `yarn start-json-server`
-
-Starts the json-server with song and artist resources fed as db.json file.
-
-### `yarn serve`
-
-Serves the latest build in the `build` folder.\
-Used for running cypress tests against.
 
 ## Tech stack
 
