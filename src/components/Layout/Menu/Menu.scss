@@ -1,0 +1,76 @@
+@import 'src/style/sizes';
+
+.menu {
+    position: fixed;
+    width: 11em;
+    padding: 1em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    top: 0;
+    background-color: var(--primary);
+    height: 100%;
+    transition: transform .5s, background-color .35s ease-in-out;
+    transform: translateX(-$menu-size);
+    z-index: 2;
+
+    & h1 {
+        margin: .5em 0;
+    }
+
+    &-close {
+        display: none;
+        cursor: pointer;
+        transition: transform .1s;
+        padding: 1em;
+        margin: -1em;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &:active {
+            transform: scale(.98);
+        }
+    }
+
+    &-top {
+
+    }
+
+    &-bottom {
+        bottom: 2em;
+        position: absolute;
+    }
+
+    & ul {
+        list-style-type: none;
+        padding: 0;
+
+        & li {
+            list-style: none;
+            padding: .5em;
+            transition: transform .2s;
+            cursor: pointer;
+
+            &.hidden {
+                display: none;
+            }
+
+            & a {
+                display: block;
+                text-decoration: none;
+            }
+
+            & .active {
+                font-weight: bold;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:active {
+                transform: scale(.98);
+            }
+        }
+    }
+}

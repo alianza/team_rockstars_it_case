@@ -1,0 +1,115 @@
+@import 'src/style/sizes';
+
+#app.menu-active .header {
+    width: calc(100% - #{$menu-size});
+}
+
+.header {
+    height: 3em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--secondary);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    margin-left: 0;
+    transition: margin-left .5s, width .5s;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    .left {
+        display: flex;
+        color: var(--primary);
+    }
+
+    &-title {
+        display: inline;
+        margin: 0;
+        line-height: 1.5em;
+        font-weight: bold;
+    }
+
+    &-status {
+        display: flex;
+        margin: 0 1em;
+        color: whitesmoke;
+        white-space: nowrap;
+
+        div {
+            display: flex;
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: .2em;
+            font-weight: lighter;
+            font-size: 1.2em;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                margin-left: .2em;
+                font-weight: bold;
+            }
+
+            svg {
+                display: none;
+                width: 1.5em;
+                height: 1.5em;
+            }
+        }
+    }
+
+    & .menu-icon {
+        padding: 0.3em;
+        cursor: pointer;
+        display: inline-block;
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        & div {
+            width: 35px;
+            height: 5px;
+            background-color: var(--primary);
+            margin: 6px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet_size) {
+    .header {
+        &-status {
+            div {
+                > h2 {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile_size) {
+    .header {
+        &-status{
+            div {
+                a {
+                    h2 {
+                        display: none;
+                    }
+
+                    svg {
+                        display: block;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+}

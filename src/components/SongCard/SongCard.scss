@@ -1,0 +1,7 @@
+@import "src/style/sizes";
+
+@screen desktop {
+    #songCard {
+        width: calc(50% - .25em);
+    }
+}
