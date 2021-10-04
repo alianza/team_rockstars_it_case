@@ -10,14 +10,6 @@ body {
   color: var(--text-primary);
 }
 
-.switch-wrapper {
-  position: relative;
-
-  & > div {
-    position: absolute;
-  }
-}
-
 a, button.link {
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -70,24 +62,6 @@ a, button.link {
     margin-top: $header-height;
     transition: margin-left .5s;
     padding: 1em 1em 8em;
-
-    div .title {
-      margin: 0 0 1em 0;
-      position: relative;
-      display: inline-block;
-
-      &:hover::before {
-        transition: opacity 1s ease-out, bottom .8s ease-out;
-        transition-delay: 1s
-      }
-
-      &::before {
-        white-space: nowrap;
-        max-width: unset;
-        left: unset;
-        transform: unset;
-      }
-    }
   }
 
   @import 'style/tooltip';
