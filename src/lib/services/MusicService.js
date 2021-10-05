@@ -1,4 +1,4 @@
-const QuoteService = {
+const MusicService = {
     baseUrl: "http://localhost:3001",
 
     doLoad(url) { // Base method for doing http Get requests
@@ -51,4 +51,4 @@ const QuoteService = {
     },
 }
 
-export default QuoteService;
+export default MusicService;
