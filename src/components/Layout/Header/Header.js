@@ -3,7 +3,7 @@ import './Header.scss'
 function Header(props) {
 
     return (
-        <div className="header">
+        <header className="header">
             <div className="left">
                 <div onClick={e => props.onMenuClick(e)} className="menu-icon">
                     <div/>
@@ -15,7 +15,7 @@ function Header(props) {
             <div className="header-status">
 
             </div>
-        </div>
+        </header>
     );
 }
 
