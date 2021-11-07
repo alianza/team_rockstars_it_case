@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -29,9 +30,6 @@ module.exports = {
         'mobile': '480px',
         'xs': '320px',
       },
-      width: {
-        '49/100': '49%',
-      }
     },
   },
   variants: {
